@@ -7,7 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Products from "./pages/Products";
+import Products from "./Pages/Products";
 import Team from "./pages/Team";
 import News from "./pages/News";
 import Gallery from "./pages/Gallery";
@@ -20,6 +20,7 @@ import Spices from "./pages/Spices";
 function App() {
   return (
     <BrowserRouter>
+      {/* Every route opens from top */}
       <ScrollToTop />
 
       <Navbar />
@@ -29,14 +30,16 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+
           <Route path="/products" element={<Products />} />
+          <Route path="/products/fruits" element={<Fruits />} />
+          <Route path="/products/vegetables" element={<Vegetables />} />
+          <Route path="/products/spices" element={<Spices />} />
+
           <Route path="/team" element={<Team />} />
           <Route path="/news" element={<News />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/products/fruits" element={<Fruits />} />
-<Route path="/products/vegetables" element={<Vegetables />} />
-<Route path="/products/spices" element={<Spices />} />
         </Routes>
       </main>
 

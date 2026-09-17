@@ -4460,3 +4460,60 @@ body {
     transform: none;
   }
 }
+
+/* =========================================
+   GLOBAL MOBILE OVERFLOW FIX
+========================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Images never cross screen width */
+img {
+  max-width: 100%;
+}
+
+/* Bootstrap rows should not create horizontal overflow */
+@media (max-width: 767.98px) {
+  .container,
+  .container-fluid {
+    max-width: 100%;
+  }
+
+  section {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .row {
+    max-width: 100%;
+  }
+
+  /* Long email/address/text */
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  /* Prevent long email from pushing contact card */
+  a[href^="mailto:"] {
+    word-break: break-all;
+  }
+}
