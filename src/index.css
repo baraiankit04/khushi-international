@@ -3341,3 +3341,1122 @@ body {
     transform: none;
   }
 }
+/* ==================================================
+   PREMIUM PRODUCTS PAGE
+   Bootstrap handles most of the layout
+================================================== */
+
+.products-premium-hero {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(25, 135, 84, 0.14), transparent 30%),
+    linear-gradient(135deg, #ffffff, #f4faf6);
+}
+
+.products-hero-image {
+  height: 590px;
+}
+
+.products-hero-image img,
+.products-category-image img,
+.products-export-image {
+  object-fit: cover;
+}
+
+.products-floating-box {
+  position: absolute;
+  left: -20px;
+  bottom: 35px;
+  min-width: 265px;
+}
+
+.products-floating-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #198754;
+  color: #ffffff;
+  font-size: 19px;
+}
+
+
+/* CATEGORY */
+
+.products-category-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.products-category-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 45px rgba(11, 68, 43, 0.12) !important;
+}
+
+.products-category-image {
+  height: 310px;
+}
+
+.products-category-icon {
+  position: absolute;
+  right: 22px;
+  bottom: -27px;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 17px;
+
+  background: #198754;
+  color: #ffffff;
+
+  font-size: 22px;
+}
+
+
+/* FEATURED */
+
+.products-feature-card {
+  height: 330px;
+  transition: transform 0.25s ease;
+}
+
+.products-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.products-feature-card .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products-feature-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(4, 30, 20, 0.88),
+    rgba(4, 30, 20, 0.02) 65%
+  );
+}
+
+
+/* EXPORT */
+
+.products-export-image {
+  min-height: 500px;
+}
+
+
+/* CTA */
+
+.products-premium-cta {
+  background:
+    radial-gradient(circle at 90% 0%, rgba(255, 193, 7, 0.12), transparent 30%),
+    linear-gradient(120deg, #092337, #116c48);
+
+  box-shadow: 0 25px 60px rgba(8, 53, 36, 0.15);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 991.98px) {
+  .products-hero-image {
+    height: 500px;
+  }
+
+  .products-floating-box {
+    left: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .products-premium-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .products-hero-image {
+    height: 420px;
+  }
+
+  .products-floating-box {
+    left: 12px;
+    right: 12px;
+    bottom: 15px;
+    min-width: auto;
+  }
+
+  .products-category-image {
+    height: 260px;
+  }
+
+  .products-feature-card {
+    height: 250px;
+  }
+
+  .products-export-image {
+    min-height: 330px;
+  }
+
+  .products-category-card:hover,
+  .products-feature-card:hover {
+    transform: none;
+  }
+}
+/* =====================================================
+   PREMIUM FRUITS PAGE
+   Bootstrap handles the main layout
+===================================================== */
+
+.fruit-page-hero {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(25, 135, 84, 0.14), transparent 30%),
+    linear-gradient(135deg, #ffffff, #f3faf6);
+}
+
+
+/* HERO */
+
+.fruit-hero-image {
+  height: 590px;
+}
+
+.fruit-hero-image img {
+  object-fit: cover;
+}
+
+.fruit-hero-overlay {
+  background:
+    linear-gradient(
+      to top,
+      rgba(4, 31, 20, 0.88),
+      rgba(4, 31, 20, 0.03) 60%
+    );
+}
+
+.fruit-hero-floating {
+  position: absolute;
+  left: -15px;
+  bottom: 35px;
+
+  min-width: 265px;
+}
+
+.fruit-floating-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #198754;
+  color: #ffffff;
+
+  font-size: 19px;
+}
+
+
+/* PRODUCT CARDS */
+
+.fruit-product-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.fruit-product-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 20px 45px
+    rgba(10, 67, 42, 0.12) !important;
+}
+
+.fruit-product-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.fruit-product-image img {
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.fruit-product-card:hover .fruit-product-image img {
+  transform: scale(1.04);
+}
+
+.fruit-number {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fruit-leaf-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+}
+
+.fruit-arrow-btn {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* QUALITY */
+
+.fruit-quality-image {
+  min-height: 520px;
+
+  object-fit: cover;
+}
+
+
+/* OTHER CATEGORIES */
+
+.fruit-other-card {
+  height: 350px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.fruit-other-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 45px
+    rgba(9, 56, 38, 0.14);
+}
+
+.fruit-other-card .card-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.fruit-other-overlay {
+  background:
+    linear-gradient(
+      to top,
+      rgba(4, 29, 20, 0.9),
+      rgba(4, 29, 20, 0.02) 70%
+    );
+}
+
+
+/* FINAL CTA */
+
+.fruit-final-cta {
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(255, 193, 7, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      120deg,
+      #092337,
+      #116c48
+    );
+
+  box-shadow:
+    0 25px 60px
+    rgba(8, 53, 36, 0.15);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 991.98px) {
+
+  .fruit-hero-image {
+    height: 500px;
+  }
+
+  .fruit-hero-floating {
+    left: 15px;
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+  .fruit-page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .fruit-hero-image {
+    height: 420px;
+  }
+
+  .fruit-hero-floating {
+    left: 12px;
+    right: 12px;
+    bottom: 15px;
+
+    min-width: auto;
+  }
+
+  .fruit-product-image {
+    height: 270px;
+  }
+
+  .fruit-quality-image {
+    min-height: 330px;
+  }
+
+  .fruit-other-card {
+    height: 290px;
+  }
+
+  .fruit-product-card:hover,
+  .fruit-other-card:hover {
+    transform: none;
+  }
+
+  .fruit-product-card:hover .fruit-product-image img {
+    transform: none;
+  }
+}
+/* ==========================================
+   VEGETABLES PAGE
+   Bootstrap handles almost all UI
+========================================== */
+
+.veg-page-hero {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(25, 135, 84, 0.13), transparent 30%),
+    linear-gradient(135deg, #fff, #f3faf6);
+}
+
+.veg-hero-image {
+  height: 590px;
+}
+
+.veg-hero-image img,
+.veg-product-image img,
+.veg-quality-image,
+.veg-category-small-image {
+  object-fit: cover;
+}
+
+.veg-image-overlay {
+  background:
+    linear-gradient(
+      to top,
+      rgba(4, 31, 20, 0.88),
+      transparent 65%
+    );
+}
+
+.veg-icon-circle {
+  width: 48px;
+  height: 48px;
+}
+
+
+/* PRODUCT IMAGE */
+
+.veg-product-image {
+  height: 290px;
+  overflow: hidden;
+}
+
+
+/* Only premium hover effect */
+
+.veg-product-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.veg-product-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(25, 135, 84, 0.3) !important;
+
+  box-shadow:
+    0 18px 40px
+    rgba(10, 65, 42, 0.1) !important;
+}
+
+
+/* PROCESS */
+
+.veg-process-icon {
+  width: 65px;
+  height: 65px;
+}
+
+
+/* QUALITY */
+
+.veg-quality-image {
+  min-height: 510px;
+}
+
+
+/* CATEGORY */
+
+.veg-category-small-image {
+  min-height: 230px;
+}
+
+
+/* CTA */
+
+.veg-final-cta {
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(255, 193, 7, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      120deg,
+      #092337,
+      #116c48
+    );
+
+  box-shadow:
+    0 25px 60px
+    rgba(8, 53, 36, 0.15);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 991.98px) {
+  .veg-hero-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .veg-page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .veg-hero-image {
+    height: 420px;
+  }
+
+  .veg-product-image {
+    height: 270px;
+  }
+
+  .veg-quality-image {
+    min-height: 330px;
+  }
+
+  .veg-category-small-image {
+    min-height: 210px;
+  }
+
+  .veg-product-card:hover {
+    transform: none;
+  }
+}
+/* ==================================================
+   SERVICES PAGE - PREMIUM HOVER EFFECTS
+================================================== */
+
+/* Main Service Cards */
+.service-hover-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.service-hover-card:hover {
+  transform: translateY(-8px);
+  border-color: #198754 !important;
+  box-shadow: 0 20px 45px rgba(25, 135, 84, 0.14) !important;
+}
+
+
+/* Service Icon */
+.service-icon-hover {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.service-hover-card:hover .service-icon-hover {
+  background-color: #198754 !important;
+  color: #ffffff !important;
+  transform: rotate(-5deg) scale(1.06);
+}
+
+
+/* Hero Mini Cards */
+.service-mini-hover {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-mini-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(25, 135, 84, 0.12) !important;
+}
+
+
+/* Dark Process Cards */
+.service-process-hover {
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.service-process-hover:hover {
+  transform: translateY(-7px);
+  background-color: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+/* Export Detail Small Cards */
+.service-detail-hover {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.service-detail-hover:hover {
+  transform: translateY(-5px);
+  border-color: #198754 !important;
+  box-shadow: 0 12px 25px rgba(25, 135, 84, 0.1);
+}
+
+
+/* Product Category Cards */
+.service-product-hover {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.service-product-hover:hover {
+  transform: translateY(-7px);
+  border-color: #198754 !important;
+  box-shadow: 0 18px 40px rgba(25, 135, 84, 0.14) !important;
+}
+
+
+/* Image Hover */
+.service-image-hover {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-image-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px rgba(8, 36, 58, 0.16) !important;
+}
+
+.service-hover-img {
+  transition: transform 0.4s ease;
+}
+
+.service-image-hover:hover .service-hover-img {
+  transform: scale(1.04);
+}
+
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .service-hover-card:hover,
+  .service-mini-hover:hover,
+  .service-process-hover:hover,
+  .service-detail-hover:hover,
+  .service-product-hover:hover,
+  .service-image-hover:hover {
+    transform: none;
+  }
+
+  .service-image-hover:hover .service-hover-img {
+    transform: none;
+  }
+
+  .service-hover-card:hover .service-icon-hover {
+    transform: none;
+  }
+}
+/* ==================================================
+   TEAM PAGE - HOVER EFFECTS
+================================================== */
+
+.team-stat-hover,
+.team-small-hover,
+.team-member-card,
+.team-department-card,
+.team-value-card,
+.team-director-card,
+.team-hero-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* Hero */
+.team-hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px rgba(8, 36, 58, 0.16) !important;
+}
+
+
+/* Hero Stats */
+.team-stat-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(25, 135, 84, 0.12) !important;
+}
+
+
+/* Director */
+.team-director-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 55px rgba(8, 36, 58, 0.14) !important;
+}
+
+.team-director-image {
+  min-height: 580px;
+  object-fit: cover;
+}
+
+
+/* Small cards */
+.team-small-hover:hover {
+  transform: translateY(-4px);
+  border-color: #198754 !important;
+  box-shadow: 0 12px 25px rgba(25, 135, 84, 0.1);
+}
+
+
+/* Team Members */
+.team-member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(8, 36, 58, 0.14) !important;
+}
+
+.team-member-image,
+.team-image-zoom {
+  transition: transform 0.4s ease;
+}
+
+.team-member-card:hover .team-member-image {
+  transform: scale(1.05);
+}
+
+.team-hero-card:hover .team-image-zoom {
+  transform: scale(1.04);
+}
+
+.team-member-icon {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.team-member-card:hover .team-member-icon {
+  background-color: #198754 !important;
+  color: #ffffff !important;
+  transform: rotate(-6deg);
+}
+
+
+/* Department Cards */
+.team-department-card:hover {
+  transform: translateY(-7px);
+  background-color: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+/* Values */
+.team-value-card:hover {
+  transform: translateY(-7px);
+  border-color: #198754 !important;
+  box-shadow: 0 18px 40px rgba(25, 135, 84, 0.12) !important;
+}
+
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .team-director-image {
+    min-height: 420px;
+  }
+
+  .team-stat-hover:hover,
+  .team-small-hover:hover,
+  .team-member-card:hover,
+  .team-department-card:hover,
+  .team-value-card:hover,
+  .team-director-card:hover,
+  .team-hero-card:hover {
+    transform: none;
+  }
+
+  .team-member-card:hover .team-member-image,
+  .team-hero-card:hover .team-image-zoom,
+  .team-member-card:hover .team-member-icon {
+    transform: none;
+  }
+}
+/* ==================================================
+   NEWS PAGE - HOVER EFFECTS
+================================================== */
+
+.news-hero-card,
+.news-mini-card,
+.news-feature-card,
+.news-card,
+.news-dark-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* Hero */
+.news-hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px rgba(8, 36, 58, 0.16) !important;
+}
+
+
+/* Hero Image */
+.news-image-zoom,
+.news-feature-image,
+.news-card-image {
+  transition: transform 0.4s ease;
+}
+
+.news-hero-card:hover .news-image-zoom {
+  transform: scale(1.04);
+}
+
+
+/* Mini Cards */
+.news-mini-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(25, 135, 84, 0.12) !important;
+}
+
+
+/* Featured */
+.news-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 55px rgba(8, 36, 58, 0.14) !important;
+}
+
+.news-feature-card:hover .news-feature-image {
+  transform: scale(1.03);
+}
+
+
+/* News Cards */
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(8, 36, 58, 0.14) !important;
+}
+
+.news-card:hover .news-card-image {
+  transform: scale(1.05);
+}
+
+
+/* Card Icon */
+.news-card-icon {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.news-card:hover .news-card-icon {
+  background-color: #198754 !important;
+  color: #ffffff !important;
+  transform: rotate(-6deg) scale(1.05);
+}
+
+
+/* Dark Cards */
+.news-dark-card:hover {
+  transform: translateY(-6px);
+  background-color: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .news-hero-card:hover,
+  .news-mini-card:hover,
+  .news-feature-card:hover,
+  .news-card:hover,
+  .news-dark-card:hover {
+    transform: none;
+  }
+
+  .news-hero-card:hover .news-image-zoom,
+  .news-feature-card:hover .news-feature-image,
+  .news-card:hover .news-card-image,
+  .news-card:hover .news-card-icon {
+    transform: none;
+  }
+}
+/* ==================================================
+   GALLERY PAGE
+================================================== */
+
+.gallery-hero-card,
+.gallery-info-card,
+.gallery-card,
+.gallery-category-card,
+.gallery-dark-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* Hero */
+.gallery-hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(8, 36, 58, 0.15) !important;
+}
+
+.gallery-hero-img {
+  transition: transform 0.4s ease;
+}
+
+.gallery-hero-card:hover .gallery-hero-img {
+  transform: scale(1.05);
+}
+
+
+/* Hero Info */
+.gallery-info-card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Main Gallery */
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(8, 36, 58, 0.15) !important;
+}
+
+.gallery-card-img {
+  transition: transform 0.45s ease;
+}
+
+.gallery-card:hover .gallery-card-img {
+  transform: scale(1.07);
+}
+
+
+/* Overlay */
+.gallery-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(5, 28, 20, 0.88),
+    rgba(5, 28, 20, 0.05) 65%
+  );
+
+  transition: background 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(5, 28, 20, 0.95),
+    rgba(5, 28, 20, 0.15) 70%
+  );
+}
+
+
+/* View Icon */
+.gallery-view-icon {
+  width: 42px;
+  height: 42px;
+
+  opacity: 0;
+  transform: scale(0.8);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.gallery-card:hover .gallery-view-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* Category Cards */
+.gallery-category-card:hover {
+  transform: translateY(-7px);
+  border-color: #198754 !important;
+
+  box-shadow:
+    0 18px 40px rgba(25, 135, 84, 0.12) !important;
+}
+
+
+/* Dark Cards */
+.gallery-dark-card:hover {
+  transform: translateY(-5px);
+
+  background-color:
+    rgba(255, 255, 255, 0.16) !important;
+
+  border-color:
+    rgba(255, 255, 255, 0.3) !important;
+}
+
+
+/* Mobile */
+@media (max-width: 767.98px) {
+
+  .gallery-hero-card:hover,
+  .gallery-info-card:hover,
+  .gallery-card:hover,
+  .gallery-category-card:hover,
+  .gallery-dark-card:hover {
+    transform: none;
+  }
+
+  .gallery-hero-card:hover .gallery-hero-img,
+  .gallery-card:hover .gallery-card-img {
+    transform: none;
+  }
+
+  .gallery-view-icon {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ==================================================
+   CONTACT PAGE - HOVER EFFECTS
+================================================== */
+
+.contact-hero-card,
+.contact-option-card,
+.contact-small-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* Hero Card */
+.contact-hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 55px rgba(8, 36, 58, 0.17) !important;
+}
+
+
+/* Contact Options */
+.contact-option-card:hover {
+  transform: translateY(-7px);
+  border-color: #198754 !important;
+
+  box-shadow:
+    0 18px 40px rgba(25, 135, 84, 0.13) !important;
+}
+
+
+/* Contact Option Icon */
+.contact-option-icon {
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.contact-option-card:hover .contact-option-icon {
+  background-color: #198754 !important;
+  color: #ffffff !important;
+  transform: rotate(-5deg) scale(1.05);
+}
+
+
+/* Small Info Cards */
+.contact-small-card:hover {
+  transform: translateX(5px);
+
+  box-shadow:
+    0 14px 30px rgba(25, 135, 84, 0.1) !important;
+}
+
+
+/* Form Focus */
+.form-control:focus,
+.form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.12);
+}
+
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .contact-hero-card:hover,
+  .contact-option-card:hover,
+  .contact-small-card:hover {
+    transform: none;
+  }
+
+  .contact-option-card:hover .contact-option-icon {
+    transform: none;
+  }
+}
